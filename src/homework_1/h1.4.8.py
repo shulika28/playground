@@ -1,12 +1,14 @@
 __author__ = 'Ihor'
 
-num1 = input()
-num2 = input()
+num1 = int(input())
+num2 = int(input())
+
 
 def last_num(num):
     return num % 10
 
-if last_num(num1) == last_num(num2):
-    print True
-else:
-    print False
+
+print(last_num(num1) == last_num(num2))
+
+'case with ternary operator:'
+print(True if last_num(num1) == last_num(num2) else False)
